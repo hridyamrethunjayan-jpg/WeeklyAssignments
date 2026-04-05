@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class MultiplesWhile{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+		int number;
+		System.out.println("Enter the number");
+		number=in.nextInt();
+		if(number>0 && number<100){
+			System.out.println("Multiples of "+number+" below 100 are");
+			int i=100;
+			while(i>=1){
+				if(i%number==0){
+					System.out.println(i);
+				}
+			i--;
+			}
+		}else
+			System.out.println("Enter positive number less than 100");
+	}
+}
